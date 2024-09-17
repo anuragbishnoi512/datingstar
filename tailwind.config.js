@@ -4,7 +4,13 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    variants: {
+      backdropBlur: ['responsive'],
+    },
     extend: {
+      backdropBlur: {
+        sm: '2px',
+      },
       container: {
         center: true,
         padding: "20px",
@@ -22,7 +28,8 @@ module.exports = {
       colors: {
         'sunsetGold': "#F7B103",
         'charcoalGray': "#454545",
-        'richBlack': "#1A1A1A"
+        'richBlack': "#1A1A1A",
+        'warmGray': "#A49496"
       }
     },
   },

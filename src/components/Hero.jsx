@@ -3,7 +3,7 @@ import { CARD_DATA } from '../utils/Helper'
 
 const Hero = () => {
   return (
-    <div>
+    <div className='bg-black'>
       <div className='container'>
         <div className='flex items-center flex-col text-center pt-[97px]'>
           <h1 className='font-raleway font-semibold text-[40px] leading-[48px] text-white text-center'>Why <span className='text-sunsetGold'>DatingStars?</span></h1>
@@ -12,7 +12,7 @@ const Hero = () => {
         <div className='flex flex-wrap flex-row mx-[-12px] mt-[48px]'>
           {CARD_DATA.map((i, index) => (
             <div key={index} className="w-1/3 px-3 py-3">
-              <div className="p-[20px_20px_0px_20px] min-h-[248px] border border-charcoalGray rounded-[22px]">
+              <div className="p-[20px_20px_0px_20px] min-h-[248px] border border-charcoalGray hover:border-sunsetGold duration-150 rounded-[22px]">
                 <div><img className='rounded-[100px] p-4 bg-charcoalGray' src={i.icon} alt="svg/icon" /></div>
                 <h2 className='font-raleway font-semibold text-2xl text-white pt-6'>{i.title}</h2>
                 <p className='font-inter text-base leading-6 text-white opacity-70 pt-4'>{i.text}</p>
