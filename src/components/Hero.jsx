@@ -1,6 +1,4 @@
 import React from 'react'
-import headphone from '../assets/images/svg/headphones.svg'
-import homefront from '../assets/images/svg/homefront.svg'
 import { CARD_DATA } from '../utils/Helper'
 
 const Hero = () => {
